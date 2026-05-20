@@ -62,8 +62,8 @@
 <body class="bg-offwhite text-dark font-sans antialiased overflow-x-hidden">
 
     <header class="fixed w-full top-0 z-50 glass-nav transition-all duration-300">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center md:text-left text-center">
-            <div class="text-2xl font-serif text-navy font-semibold tracking-wide w-full md:w-auto">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-serif text-navy font-semibold tracking-wide">
                 Dra. Thais <span class="text-gold">Freitas</span>
             </div>
             
@@ -78,7 +78,7 @@
                 Agendar Avaliação
             </a>
             
-            <button id="mobile-menu-btn" class="md:hidden text-2xl text-navy absolute right-6 top-1/2 -translate-y-1/2">
+            <button id="mobile-menu-btn" class="md:hidden text-2xl text-navy">
                 <i class="fa-solid fa-bars"></i>
             </button>
         </div>
@@ -95,8 +95,8 @@
     </header>
 
     <section class="relative min-h-screen hero-bg flex items-center pt-20">
-        <div class="max-w-7xl mx-auto px-6 w-full fade-in flex flex-col items-center md:items-start text-center md:text-left">
-            <div class="max-w-2xl">
+        <div class="max-w-7xl mx-auto px-6 w-full fade-in">
+            <div class="max-w-2xl mx-auto text-center">
                 <p class="text-gold font-medium tracking-[0.2em] text-sm uppercase mb-4">Beleza em sua forma mais pura</p>
                 <h1 class="text-5xl md:text-6xl font-serif text-navy leading-tight mb-6">
                     Realce sua Beleza com <span class="italic text-gold">Naturalidade</span> e Sofisticação
@@ -149,19 +149,17 @@
     <section id="sobre" class="py-24 bg-nude">
         <div class="max-w-7xl mx-auto px-6">
             <div class="flex flex-col md:flex-row items-center gap-16">
-                <div class="w-full md:w-1/2 flex justify-center fade-in">
-                    <div class="relative p-3 bg-white/40 rounded-[2.5rem] shadow-xl backdrop-blur-sm max-w-md w-full border border-white/60">
-                        <div class="overflow-hidden rounded-[2rem] bg-offwhite aspect-[3/4]">
-                            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Dra. Thais Freitas" class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700">
-                        </div>
-                        <div class="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-navy text-center py-3 px-8 rounded-full shadow-xl w-3/4 border border-gold/30">
-                            <p class="text-white font-serif text-lg tracking-wider">CRBM: 24.716</p>
-                            <p class="text-xs text-gold uppercase tracking-widest font-semibold">Biomédica Esteta</p>
+                <div class="w-full md:w-1/2 fade-in">
+                    <div class="relative">
+                        <img src="img/thais.jpg" alt="Dra. Thais Freitas" class="rounded-t-full rounded-b-3xl shadow-2xl object-cover w-full h-[600px]">
+                        <div class="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl glass-card">
+                            <p class="text-navy font-serif text-xl">CRBM: 24.716</p>
+                            <p class="text-sm text-gold">Biomédica Esteta</p>
                         </div>
                     </div>
                 </div>
                 
-                <div class="w-full md:w-1/2 text-center md:text-left flex flex-col items-center md:items-start fade-in">
+                <div class="w-full md:w-1/2 fade-in">
                     <h2 class="text-4xl font-serif text-navy mb-6">Dra. Thais Freitas</h2>
                     <p class="text-gray-600 mb-6 leading-relaxed font-light">
                         Com uma visão estética apurada e vasta experiência clínica, a Dra. Thais Freitas dedica-se a transformar a autoestima de seus pacientes através da harmonização facial e corporal.
@@ -169,7 +167,7 @@
                     <p class="text-gray-600 mb-8 leading-relaxed font-light">
                         Sua abordagem é fundamentada no respeito à anatomia individual e na busca incessante pela simetria perfeita, unindo ciência, arte e inovação tecnológica para entregar resultados exclusivos, seguros e indetectáveis.
                     </p>
-                    <ul class="space-y-4 mb-8 text-left inline-block">
+                    <ul class="space-y-4 mb-8">
                         <li class="flex items-center text-navy"><i class="fa-solid fa-check text-gold mr-3"></i> Especialista em Harmonização Full Face</li>
                         <li class="flex items-center text-navy"><i class="fa-solid fa-check text-gold mr-3"></i> Referência em Tecnologias Avançadas</li>
                         <li class="flex items-center text-navy"><i class="fa-solid fa-check text-gold mr-3"></i> Foco em Rejuvenescimento Natural</li>
@@ -254,70 +252,55 @@
         </div>
     </section>
 
-    <footer class="bg-[#0b1b33] text-white pt-24 pb-12 border-t-4 border-gold">
-        <div class="max-w-7xl mx-auto px-6 text-center md:text-left">
-            
-            <div class="flex flex-col items-center justify-center mb-16 border-b border-white/10 pb-16">
-                <a href="https://wa.me/5511999999999" target="_blank" class="bg-[#b89768]/80 text-white font-serif tracking-wide text-lg md:text-xl px-12 py-4 rounded-2xl shadow-xl hover:bg-[#b89768] hover:-translate-y-1 transition-all duration-300 mb-4 max-w-md w-full text-center">
-                    Agendar Minha Avaliação
-                </a>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 items-start mb-16">
+    <footer class="bg-navy pt-16 pb-8 border-t-4 border-gold">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 mb-12">
                 
-                <div class="flex flex-col items-center md:items-start">
-                    <div class="text-2xl font-serif tracking-wide text-white mb-4">
-                        <i class="fa-solid fa-leaf text-gold mr-2 text-xl opacity-70"></i>DRA. THAIS FREITAS
+                <div class="flex flex-col items-center md:items-start text-center md:text-left">
+                    <div class="text-2xl font-serif text-white mb-4">
+                        Dra. Thais <span class="text-gold">Freitas</span>
                     </div>
-                    <p class="text-gray-400 text-sm max-w-sm mb-6 leading-relaxed">
-                        Sua saúde, beleza e longevidade tratadas com a seriedade e o requinte que você merece.
+                    <p class="text-gray-400 text-sm mb-6 leading-relaxed max-w-xs">
+                        Elevando a autoestima através da ciência, arte e respeito à naturalidade de cada rosto.
                     </p>
-                    <div class="flex space-x-3">
-                        <a href="https://instagram.com/dra_thaisfreitas" target="_blank" class="w-10 h-10 rounded-full bg-[#b89768]/20 flex items-center justify-center text-[#b89768] hover:bg-[#b89768] hover:text-white transition-all duration-300">
+                    <div class="flex space-x-4">
+                        <a href="https://instagram.com/dra_thaisfreitas" target="_blank" class="w-10 h-10 rounded-full bg-gray-800/50 border border-gray-700 flex items-center justify-center text-white hover:border-gold hover:text-gold transition-colors">
                             <i class="fa-brands fa-instagram text-lg"></i>
                         </a>
-                        <a href="#" class="w-10 h-10 rounded-full bg-[#b89768]/20 flex items-center justify-center text-[#b89768] hover:bg-[#b89768] hover:text-white transition-all duration-300">
-                            <i class="fa-brands fa-facebook-f text-base"></i>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800/50 border border-gray-700 flex items-center justify-center text-white hover:border-gold hover:text-gold transition-colors">
+                            <i class="fa-brands fa-facebook-f text-lg"></i>
                         </a>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-center md:items-start text-gray-300 space-y-4">
-                    <h4 class="text-white font-serif text-xl font-medium tracking-wide mb-2">Fale Conosco</h4>
-                    
-                    <p class="flex items-center text-sm font-light text-center md:text-left">
-                        <i class="fa-solid fa-location-dot text-gold mr-3 text-base flex-shrink-0"></i>
-                        <span>Av. Exemplo de Luxo, 1000 — Sala 402, Bairro Nobre</span>
-                    </p>
-                    
-                    <p class="flex items-center text-sm font-light">
-                        <i class="fa-solid fa-phone text-gold mr-3 text-sm flex-shrink-0"></i>
-                        <span>(11) 99999-9999</span>
-                    </p>
-                    
-                    <p class="flex items-center text-sm font-light">
-                        <i class="fa-solid fa-envelope text-gold mr-3 text-sm flex-shrink-0"></i>
-                        <span>contato@drathaisfreitas.com.br</span>
-                    </p>
-                    
-                    <span class="text-xs tracking-widest text-gold/80 bg-white/5 px-4 py-1.5 rounded-md border border-white/10 mt-2 block">
-                        CRBM: 24.716
-                    </span>
+
+                <div class="flex flex-col items-center md:items-start text-center md:text-left">
+                    <h4 class="text-white font-serif text-lg mb-6">Fale Conosco</h4>
+                    <ul class="space-y-4 text-sm text-gray-400">
+                        <li class="flex flex-col md:flex-row items-center md:items-start">
+                            <i class="fa-solid fa-location-dot text-gold md:mt-1 md:mr-3 mb-2 md:mb-0 text-lg"></i>
+                            <span>Clínica Freitas<br>Belo Horizonte - MG</span>
+                        </li>
+                        <li class="flex flex-col md:flex-row items-center md:items-start">
+                            <i class="fa-regular fa-envelope text-gold md:mt-1 md:mr-3 mb-2 md:mb-0 text-lg"></i>
+                            <span>contato@drathaisfreitas.com.br</span>
+                        </li>
+                    </ul>
                 </div>
 
-                <div class="flex flex-col items-center md:items-end justify-center h-full pt-4 md:pt-0">
-                    <p class="text-white font-serif text-lg md:text-xl italic mb-6 text-center md:text-right font-light">
-                        Pronto para cuidar da sua saúde?
+                <div class="flex flex-col items-center md:items-start text-center md:text-left">
+                    <h4 class="text-white font-serif text-lg mb-6">Inicie sua jornada</h4>
+                    <p class="text-gray-400 text-sm mb-6 leading-relaxed max-w-xs">
+                        A saúde e a beleza caminham juntas. Dê o primeiro passo para o seu autocuidado.
                     </p>
-                    <a href="https://wa.me/5511999999999" target="_blank" class="inline-flex items-center justify-center bg-[#b89768] text-white text-base font-medium px-8 py-4 rounded-xl shadow-lg hover:bg-[#a68557] transition-all duration-300 max-w-sm w-full text-center">
-                        Fale conosco no WhatsApp
+                    <a href="https://wa.me/5511999999999" target="_blank" class="inline-flex items-center bg-gray-800/60 border border-gray-700 text-white hover:border-gold hover:text-gold px-6 py-3 rounded-full text-sm font-medium transition-all">
+                        <i class="fa-brands fa-whatsapp mr-2 text-lg"></i> WhatsApp
                     </a>
                 </div>
+
             </div>
             
-            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500 gap-2">
-                <p>&copy; 2026 Dra. Thais Freitas. Todos os direitos reservados.</p>
-                <p>Desenvolvido com sofisticação e alta performance.</p>
+            <div class="text-center pt-8 border-t border-gray-800">
+                <p class="text-xs text-gray-500">&copy; 2026 Dra. Thais Freitas. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
@@ -327,6 +310,15 @@
     </a>
 
     <script>
+        // === Função para voltar ao topo ao atualizar ===
+        if (history.scrollRestoration) {
+            history.scrollRestoration = 'manual';
+        }
+        window.addEventListener('beforeunload', () => {
+            window.scrollTo(0, 0);
+        });
+        // ===============================================
+
         const btn = document.getElementById('mobile-menu-btn');
         const menu = document.getElementById('mobile-menu');
 
